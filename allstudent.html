@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Student Data</a>
+        <a class="navbar-brand" href="#">Students</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -63,13 +63,13 @@
           data.forEach((person) => {
             const row = document.createElement("tr");
             const nameCell = document.createElement("td");
-            const emailCell = document.createElement("td");
+            const rollnoCell = document.createElement("td");
 
             nameCell.textContent = person.name;
-            emailCell.textContent = person.email;
+            rollnoCell.textContent = person.rollno;
 
             row.appendChild(nameCell);
-            row.appendChild(emailCell);
+            row.appendChild(rollnoCell);
             tableBody.appendChild(row);
           });
 

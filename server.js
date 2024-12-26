@@ -38,6 +38,7 @@ const server = http.createServer((req, res) => {
           res.end("Server Error");
         } else {
           console.log("sending register.html file");
+          console.log(data);
           res.end(data);
         }
       });
